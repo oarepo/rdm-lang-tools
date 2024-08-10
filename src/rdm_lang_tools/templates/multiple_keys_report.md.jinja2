@@ -1,0 +1,23 @@
+# Duplicated translations report
+
+Language: {{ lang }}
+
+Generated at: {{ date }}
+
+{% if values_with_multiple_keys %}
+## Values with multiple keys
+
+
+| Translation | Keys | Package | File |
+|-------------|------| --- | --- |
+{% for value, keys in values_with_multiple_keys.items() -%}
+{%- for key in keys %}
+{%- if loop.first -%}
+| {{ value|whitespaces }}
+{%- else -%}
+|
+{%- endif -%}
+| {{ key.key|whitespaces }} | {{ key.package }} | {{ key.file }} |
+{% endfor -%}
+{%- endfor -%}
+{%- endif -%}

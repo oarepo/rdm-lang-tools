@@ -1,5 +1,6 @@
 import dataclasses
 import datetime
+import shutil
 from collections import defaultdict, namedtuple
 from pathlib import Path
 from typing import Dict, List
@@ -73,34 +74,54 @@ class TranslationRegistry:
         return ret
 
 
-def generate_protocol(target_directory, lang, registry):
-    report_file = target_directory / f"duplicates_{lang}.md"
+def generate_multiple_keys_protocol(target_directory, lang, registry):
+    values_with_multiple_keys_report_file = target_directory / f"{lang}.md"
 
-    unclear_values = registry.get_unclear_values()
     values_with_multiple_keys = registry.get_values_with_multiple_keys()
 
-    if not unclear_values and not values_with_multiple_keys:
-        if report_file.exists():
-            report_file.unlink()
+    if not values_with_multiple_keys:
         return
+
+    jinja_env = get_jinja_env()
+
+    template = jinja_env.get_template("multiple_keys_report.md.jinja2")
+    with open(values_with_multiple_keys_report_file, "w") as f:
+        f.write(
+            template.render(
+                lang=lang,
+                date=str(datetime.date.today()),
+                values_with_multiple_keys=values_with_multiple_keys,
+            )
+        )
+
+def generate_inconsistent_translations_protocol(target_directory, lang, registry):
+    duplicates_report_file = target_directory / f"{lang}.md"
+    unclear_values = registry.get_unclear_values()
+    if not unclear_values:
+        return
+    jinja_env = get_jinja_env()
+    template = jinja_env.get_template("inconsistent_translations_report.md.jinja2")
+    with open(duplicates_report_file, "w") as f:
+        f.write(
+            template.render(
+                lang=lang,
+                date=str(datetime.date.today()),
+                unclear_values=unclear_values,
+            )
+        )
+
+
+def get_jinja_env():
     jinja_env = jinja2.Environment(
         loader=jinja2.FileSystemLoader(Path(__file__).parent.parent / "templates"),
         autoescape=False,
     )
+
     def show_whitespaces(value):
         return value.replace("\n", "↵ ")
 
     jinja_env.filters["whitespaces"] = show_whitespaces
-    template = jinja_env.get_template("duplicates_report.md.jinja2")
-    with open(report_file, "w") as f:
-        f.write(
-            template.render(
-                lang=lang,
-                date=str(datetime.datetime.now()),
-                unclear_values=unclear_values,
-                values_with_multiple_keys=values_with_multiple_keys,
-            )
-        )
+    return jinja_env
 
 
 def check_duplicates(target_directory, temp_directory, repository, languages):
@@ -115,8 +136,20 @@ def check_duplicates(target_directory, temp_directory, repository, languages):
                 pkg, translation_file, translation_file.relative_to(local_path)
             )
 
+    multiple_keys_protocol_directory = target_directory / "multiple_keys"
+    inconsistent_translations_protocol_directory = target_directory / "inconsistent_translations"
+
+    if multiple_keys_protocol_directory.exists():
+        shutil.rmtree(multiple_keys_protocol_directory)
+    multiple_keys_protocol_directory.mkdir(parents=True)
+
+    if inconsistent_translations_protocol_directory.exists():
+        shutil.rmtree(inconsistent_translations_protocol_directory)
+    inconsistent_translations_protocol_directory.mkdir(parents=True)
+
     for lang, registry in registry_by_language.items():
-        generate_protocol(target_directory, lang, registry)
+        generate_multiple_keys_protocol(multiple_keys_protocol_directory, lang, registry)
+        generate_inconsistent_translations_protocol(inconsistent_translations_protocol_directory, lang, registry)
 
 
 @click.command()
