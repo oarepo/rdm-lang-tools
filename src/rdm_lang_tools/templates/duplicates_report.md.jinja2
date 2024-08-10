@@ -1,0 +1,43 @@
+# Duplicated translations report
+
+Language: {{ lang }}
+
+Generated at: {{ date }}
+
+{% if unclear_values %}
+## Keys with multiple different translations
+
+
+| Key | Translation | Package | File |
+| --- | --- | --- | --- |
+{% for key, values in unclear_values.items() -%}
+{%- for value in values %}
+{%- if loop.first -%}
+| {{ key|whitespaces }}
+{%- else -%}
+|
+{%- endif -%}
+| {{ value.value|whitespaces }} | {{ value.package }} | {{ value.file }} |
+{% endfor -%}
+{%- endfor -%}
+{%- endif -%}
+
+
+
+{% if values_with_multiple_keys %}
+## Values with multiple keys
+
+
+| Translation | Keys | Package | File |
+|-------------|------| --- | --- |
+{% for value, keys in values_with_multiple_keys.items() -%}
+{%- for key in keys %}
+{%- if loop.first -%}
+| {{ value|whitespaces }}
+{%- else -%}
+|
+{%- endif -%}
+| {{ key.key|whitespaces }} | {{ key.package }} | {{ key.file }} |
+{% endfor -%}
+{%- endfor -%}
+{%- endif -%}

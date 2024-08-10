@@ -1,0 +1,6 @@
+.idea
+.temp
+.venv
+*.~
+*.pyc
+src/rdm_lang_tools.egg-info

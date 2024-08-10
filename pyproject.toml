@@ -1,0 +1,39 @@
+[project]
+name = "rdm-lang-tools"
+version = "0.1.0"
+description = "Language tools for RDM"
+readme = "README.md"
+license = {text = "MIT License"}
+authors = [
+    { name = "Mirek Simek", email = "miroslav.simek@cesnet.cz" }
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+]
+
+requires-python = ">= 3.10"
+
+dependencies=[
+    "click>=8.0.1",
+    "transifex-python>=3.5.0",
+    "progressbar2>=4.4.2",
+    "polib>=1.2.0",
+    "jinja2"
+]
+
+[project.scripts]
+check-duplicates = "rdm_lang_tools.cli.check_duplicates:main"
+
+[project.urls]
+Homepage = "https://github.com/oarepo/rdm-lang-tools"
+Repository = "https://github.com/oarepo/rdm-lang-tools.git"
+Issues = "https://github.com/oarepo/rdm-lang-tools/issues"
+Changelog = "https://github.com/oarepo/rdm-lang-tools/blob/master/CHANGELOG.md"
+
+
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
