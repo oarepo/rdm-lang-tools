@@ -2,7 +2,7 @@
 
 Language: ro
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Keys with multiple different translations
@@ -32,6 +32,7 @@ Generated at: 2024-08-10
 || Piatra tombală | invenio-requests | invenio_requests/translations/ro/LC_MESSAGES/messages.po |
 | Creators| Creatori | invenio-app-rdm | invenio_app_rdm/translations/ro/LC_MESSAGES/messages.po |
 || Creatorii | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ro/messages.po |
+|| Creatorii | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ro/messages.po |
 | This is the file fingerprint (checksum), which can be used to verify the file integrity.| Aceasta este amprenta fișierului (checksum), care poate fi folosită pentru a verifica integritatea fișierului. | invenio-app-rdm | invenio_app_rdm/translations/ro/LC_MESSAGES/messages.po |
 || Acesta este amprenta fișierului (checksum), care poate fi folosită pentru a verifica integritatea fișierului. | invenio-previewer | invenio_previewer/translations/ro/LC_MESSAGES/messages.po |
 | Log out| Deconectare | invenio-app-rdm | invenio_app_rdm/translations/ro/LC_MESSAGES/messages.po |

@@ -2,7 +2,7 @@
 
 Language: uk
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -25,10 +25,15 @@ Generated at: 2024-08-10
 || Search | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/uk/messages.po |
 || Search | invenio-communities | invenio_communities/translations/uk/LC_MESSAGES/messages.po |
 || Search | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/uk/messages.po |
+|| Search | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/uk/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/translations/uk/LC_MESSAGES/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/uk/messages.po |
 || Search | invenio-theme | invenio_theme/translations/uk/LC_MESSAGES/messages.po |
 || Search  | invenio-app-rdm | invenio_app_rdm/translations/uk/LC_MESSAGES/messages.po |
+| Посилання| Link | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/uk/messages.po |
+|| References | invenio-app-rdm | invenio_app_rdm/translations/uk/LC_MESSAGES/messages.po |
+|| References | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/uk/messages.po |
+|| References | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/uk/messages.po |
 | Права| Privileges | invenio-communities | invenio_communities/translations/uk/LC_MESSAGES/messages.po |
 || Rights | invenio-app-rdm | invenio_app_rdm/translations/uk/LC_MESSAGES/messages.po |
 | Налаштування| Preferences | invenio-userprofiles | invenio_userprofiles/translations/uk/LC_MESSAGES/messages.po |
@@ -40,3 +45,5 @@ Generated at: 2024-08-10
 || View | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/uk/messages.po |
 || View | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/uk/messages.po |
 || View | invenio-pidstore | invenio_pidstore/translations/uk/LC_MESSAGES/messages.po |
+| Подати на розгляд| Submit for review | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/uk/messages.po |
+|| Submitted for review | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/uk/messages.po |

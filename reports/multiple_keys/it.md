@@ -2,7 +2,7 @@
 
 Language: it
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -30,10 +30,12 @@ Generated at: 2024-08-10
 || Files | invenio-app-rdm | invenio_app_rdm/translations/it/LC_MESSAGES/messages.po |
 || Files | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/it/messages.po |
 || Files | invenio-files-rest | invenio_files_rest/translations/it/LC_MESSAGES/messages.po |
+|| Files | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/it/messages.po |
 | Ricerca| Search | invenio-search-ui | invenio_search_ui/translations/it/LC_MESSAGES/messages.po |
 || Search | invenio-theme | invenio_theme/translations/it/LC_MESSAGES/messages.po |
 || Search  | invenio-app-rdm | invenio_app_rdm/translations/it/LC_MESSAGES/messages.po |
 | Anteprima| Preview | invenio-app-rdm | invenio_app_rdm/translations/it/LC_MESSAGES/messages.po |
 || Preview | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/it/messages.po |
 || Preview | invenio-previewer | invenio_previewer/translations/it/LC_MESSAGES/messages.po |
+|| Preview | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/it/messages.po |
 || Previewing | invenio-previewer | invenio_previewer/translations/it/LC_MESSAGES/messages.po |

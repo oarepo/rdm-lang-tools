@@ -2,7 +2,7 @@
 
 Language: es
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -31,6 +31,7 @@ Generated at: 2024-08-10
 | Previsualizar| Preview | invenio-app-rdm | invenio_app_rdm/translations/es/LC_MESSAGES/messages.po |
 || Preview | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/es/messages.po |
 || Preview | invenio-previewer | invenio_previewer/translations/es/LC_MESSAGES/messages.po |
+|| Preview | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/es/messages.po |
 || Previewing | invenio-previewer | invenio_previewer/translations/es/LC_MESSAGES/messages.po |
 | Versiones| Releases | invenio-github | invenio_github/translations/es/LC_MESSAGES/messages.po |
 || Versions | invenio-app-rdm | invenio_app_rdm/translations/es/LC_MESSAGES/messages.po |
@@ -40,6 +41,7 @@ Generated at: 2024-08-10
 || Search | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/es/messages.po |
 || Search | invenio-communities | invenio_communities/translations/es/LC_MESSAGES/messages.po |
 || Search | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/es/messages.po |
+|| Search | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/es/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/translations/es/LC_MESSAGES/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/es/messages.po |
 || Search | invenio-theme | invenio_theme/translations/es/LC_MESSAGES/messages.po |
@@ -51,9 +53,12 @@ Generated at: 2024-08-10
 || Id | invenio-pages | invenio_pages/translations/es/LC_MESSAGES/messages.po |
 || Identifier | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/es/messages.po |
 || Identifier | invenio-oaiserver | invenio_oaiserver/translations/es/LC_MESSAGES/messages.po |
+|| Identifier | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/es/messages.po |
 | Tipo de almacenamiento| Storage Class | invenio-files-rest | invenio_files_rest/translations/es/LC_MESSAGES/messages.po |
 || Storage class | invenio-files-rest | invenio_files_rest/translations/es/LC_MESSAGES/messages.po |
 | Rechazar| Decline | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/es/messages.po |
 || Reject | invenio-oauth2server | invenio_oauth2server/translations/es/LC_MESSAGES/messages.po |
 | O| OR | invenio-oauthclient | invenio_oauthclient/translations/es/LC_MESSAGES/messages.po |
 || Or | invenio-oauthclient | invenio_oauthclient/translations/es/LC_MESSAGES/messages.po |
+| Registro completo| Complete registration | invenio-oauthclient | invenio_oauthclient/translations/es/LC_MESSAGES/messages.po |
+|| Full record | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/es/messages.po |

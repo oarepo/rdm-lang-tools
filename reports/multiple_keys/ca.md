@@ -2,7 +2,7 @@
 
 Language: ca
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -16,3 +16,4 @@ Generated at: 2024-08-10
 || Id | invenio-pages | invenio_pages/translations/ca/LC_MESSAGES/messages.po |
 || Identifier | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ca/messages.po |
 || Identifier | invenio-oaiserver | invenio_oaiserver/translations/ca/LC_MESSAGES/messages.po |
+|| Identifier | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ca/messages.po |

@@ -2,7 +2,7 @@
 
 Language: sk
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -26,6 +26,7 @@ Generated at: 2024-08-10
 || Title | invenio-app-rdm | invenio_app_rdm/translations/sk/LC_MESSAGES/messages.po |
 || Title | invenio-pages | invenio_pages/translations/sk/LC_MESSAGES/messages.po |
 || Title | invenio-rdm-records | invenio_rdm_records/translations/sk/LC_MESSAGES/messages.po |
+|| Title | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/sk/messages.po |
 || Title | invenio-vocabularies | invenio_vocabularies/translations/sk/LC_MESSAGES/messages.po |
 | ID| ID | invenio-app-rdm | invenio_app_rdm/translations/sk/LC_MESSAGES/messages.po |
 || ID | invenio-files-rest | invenio_files_rest/translations/sk/LC_MESSAGES/messages.po |

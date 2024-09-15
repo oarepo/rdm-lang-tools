@@ -2,7 +2,7 @@
 
 Language: zh_CN
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Keys with multiple different translations
@@ -35,12 +35,15 @@ Generated at: 2024-08-10
 || 用完 | invenio-communities | invenio_communities/translations/zh_CN/LC_MESSAGES/messages.po |
 || 用完 | invenio-requests | invenio_requests/translations/zh_CN/LC_MESSAGES/messages.po |
 | Related works| 相关工作 | invenio-app-rdm | invenio_app_rdm/translations/zh_CN/LC_MESSAGES/messages.po |
+|| 相关工作 | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/zh_CN/messages.po |
 || 相关的工作 | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/zh_CN/messages.po |
 | DOI| DOI | invenio-app-rdm | invenio_app_rdm/translations/zh_CN/LC_MESSAGES/messages.po |
 || DOI | invenio-github | invenio_github/translations/zh_CN/LC_MESSAGES/messages.po |
 || DOI | invenio-rdm-records | invenio_rdm_records/translations/zh_CN/LC_MESSAGES/messages.po |
+|| DOI | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/zh_CN/messages.po |
 || 数字对象唯一标识符 | invenio-vocabularies | invenio_vocabularies/translations/zh_CN/LC_MESSAGES/messages.po |
 | Size| 大小 | invenio-app-rdm | invenio_app_rdm/translations/zh_CN/LC_MESSAGES/messages.po |
+|| 大小 | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/zh_CN/messages.po |
 || 规模 | invenio-files-rest | invenio_files_rest/translations/zh_CN/LC_MESSAGES/messages.po |
 || 规模 | invenio-previewer | invenio_previewer/translations/zh_CN/LC_MESSAGES/messages.po |
 | This is the file fingerprint (checksum), which can be used to verify the file integrity.| 这是文件的校验和，可用于验证文件完整性。 | invenio-app-rdm | invenio_app_rdm/translations/zh_CN/LC_MESSAGES/messages.po |
@@ -49,6 +52,7 @@ Generated at: 2024-08-10
 || 搜索 | invenio-app-rdm | invenio_app_rdm/translations/zh_CN/LC_MESSAGES/messages.po |
 || 搜索 | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/zh_CN/messages.po |
 || 搜索 | invenio-communities | invenio_communities/translations/zh_CN/LC_MESSAGES/messages.po |
+|| 搜索 | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/zh_CN/messages.po |
 || 搜索 | invenio-search-ui | invenio_search_ui/translations/zh_CN/LC_MESSAGES/messages.po |
 || 搜索 | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/zh_CN/messages.po |
 || 搜索 | invenio-theme | invenio_theme/translations/zh_CN/LC_MESSAGES/messages.po |

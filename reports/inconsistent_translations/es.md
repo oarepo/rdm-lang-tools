@@ -2,7 +2,7 @@
 
 Language: es
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Keys with multiple different translations
@@ -35,6 +35,7 @@ Generated at: 2024-08-10
 || Tarjeta DOI | invenio-app-rdm | invenio_app_rdm/translations/es/LC_MESSAGES/messages.po |
 | Delete| Eliminar | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/es/messages.po |
 || Eliminar | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/es/messages.po |
+|| Eliminar | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/es/messages.po |
 || Suprimir | invenio-oauth2server | invenio_oauth2server/translations/es/LC_MESSAGES/messages.po |
 || Suprimir | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/es/messages.po |
 | Settings| Ajustes | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/es/messages.po |
@@ -57,9 +58,11 @@ Generated at: 2024-08-10
 || Más viejo | invenio-users-resources | invenio_users_resources/translations/es/LC_MESSAGES/messages.po |
 | Version| Version | invenio-communities | invenio_communities/translations/es/LC_MESSAGES/messages.po |
 || Version | invenio-drafts-resources | invenio_drafts_resources/translations/es/LC_MESSAGES/messages.po |
+|| Version | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/es/messages.po |
 || Versión | invenio-files-rest | invenio_files_rest/translations/es/LC_MESSAGES/messages.po |
 || Versión | invenio-rdm-records | invenio_rdm_records/translations/es/LC_MESSAGES/messages.po |
 | Public| Publico | invenio-communities | invenio_communities/translations/es/LC_MESSAGES/messages.po |
 || Publico | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/es/messages.po |
+|| Publico | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/es/messages.po |
 || Publico | invenio-userprofiles | invenio_userprofiles/translations/es/LC_MESSAGES/messages.po |
 || Público | invenio-oauth2server | invenio_oauth2server/translations/es/LC_MESSAGES/messages.po |

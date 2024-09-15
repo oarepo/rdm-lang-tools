@@ -2,7 +2,7 @@
 
 Language: et
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Keys with multiple different translations
@@ -23,6 +23,7 @@ Generated at: 2024-08-10
 || Nimetus | invenio-previewer | invenio_previewer/translations/et/LC_MESSAGES/messages.po |
 || Nimetus | invenio-rdm-records | invenio_rdm_records/translations/et/LC_MESSAGES/messages.po |
 || Nimetus | invenio-users-resources | invenio_users_resources/translations/et/LC_MESSAGES/messages.po |
+|| Nimi | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/et/messages.po |
 || Nimi | invenio-vocabularies | invenio_vocabularies/translations/et/LC_MESSAGES/messages.po |
 | Accepted| Aktsepteeritud | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/et/messages.po |
 || Aktsepteeritud | invenio-requests | invenio_requests/translations/et/LC_MESSAGES/messages.po |

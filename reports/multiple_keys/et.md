@@ -2,7 +2,7 @@
 
 Language: et
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -26,6 +26,7 @@ Generated at: 2024-08-10
 || Cancel | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/et/messages.po |
 || Cancel | invenio-oauth2server | invenio_oauth2server/translations/et/LC_MESSAGES/messages.po |
 || Cancel | invenio-previewer | invenio_previewer/translations/et/LC_MESSAGES/messages.po |
+|| Cancel | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/et/messages.po |
 || Cancel | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/et/messages.po |
 || Cancel | invenio-userprofiles | invenio_userprofiles/translations/et/LC_MESSAGES/messages.po |
 || Cancel | invenio-users-resources | invenio_users_resources/translations/et/LC_MESSAGES/messages.po |
@@ -47,6 +48,7 @@ Generated at: 2024-08-10
 || Search | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/et/messages.po |
 || Search | invenio-communities | invenio_communities/translations/et/LC_MESSAGES/messages.po |
 || Search | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/et/messages.po |
+|| Search | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/et/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/translations/et/LC_MESSAGES/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/et/messages.po |
 || Search | invenio-theme | invenio_theme/translations/et/LC_MESSAGES/messages.po |
@@ -54,9 +56,11 @@ Generated at: 2024-08-10
 | Eelvaade| Preview | invenio-app-rdm | invenio_app_rdm/translations/et/LC_MESSAGES/messages.po |
 || Preview | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/et/messages.po |
 || Preview | invenio-previewer | invenio_previewer/translations/et/LC_MESSAGES/messages.po |
+|| Preview | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/et/messages.po |
 || Preview for | invenio-app-rdm | invenio_app_rdm/translations/et/LC_MESSAGES/messages.po |
 || Previewing | invenio-previewer | invenio_previewer/translations/et/LC_MESSAGES/messages.po |
-| Seosed| Affiliations | invenio-userprofiles | invenio_userprofiles/translations/et/LC_MESSAGES/messages.po |
+| Seosed| Affiliations | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/et/messages.po |
+|| Affiliations | invenio-userprofiles | invenio_userprofiles/translations/et/LC_MESSAGES/messages.po |
 || Affiliations | invenio-users-resources | invenio_users_resources/translations/et/LC_MESSAGES/messages.po |
 || Affiliations for | invenio-app-rdm | invenio_app_rdm/translations/et/LC_MESSAGES/messages.po |
 | Grupp| Community | invenio-app-rdm | invenio_app_rdm/translations/et/LC_MESSAGES/messages.po |
@@ -74,5 +78,10 @@ Generated at: 2024-08-10
 | Otsi gruppe| Search communities | invenio-communities | invenio_communities/translations/et/LC_MESSAGES/messages.po |
 || Search for groups | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/et/messages.po |
 || Search for groups | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/et/messages.po |
+| Lisatud| Added | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/et/messages.po |
+|| Submitted | invenio-communities | invenio_communities/translations/et/LC_MESSAGES/messages.po |
+|| Submitted | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/et/messages.po |
+|| Submitted | invenio-requests | invenio_requests/translations/et/LC_MESSAGES/messages.po |
+|| Submitted | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/et/messages.po |
 | Talletusklass| Storage Class | invenio-files-rest | invenio_files_rest/translations/et/LC_MESSAGES/messages.po |
 || Storage class | invenio-files-rest | invenio_files_rest/translations/et/LC_MESSAGES/messages.po |

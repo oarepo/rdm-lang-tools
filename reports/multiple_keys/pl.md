@@ -2,7 +2,7 @@
 
 Language: pl
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -16,6 +16,8 @@ Generated at: 2024-08-10
 | Usuń| Delete | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/pl/messages.po |
 || Delete | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/pl/messages.po |
 || Delete | invenio-oauth2server | invenio_oauth2server/translations/pl/LC_MESSAGES/messages.po |
+|| Delete | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/pl/messages.po |
 || Delete | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/pl/messages.po |
 || Remove | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/pl/messages.po |
 || Remove | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/pl/messages.po |
+|| Remove | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/pl/messages.po |

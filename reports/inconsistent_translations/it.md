@@ -2,7 +2,7 @@
 
 Language: it
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Keys with multiple different translations
@@ -19,14 +19,17 @@ Generated at: 2024-08-10
 || Cerca | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/it/messages.po |
 || Cerca | invenio-communities | invenio_communities/translations/it/LC_MESSAGES/messages.po |
 || Cerca | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/it/messages.po |
+|| Cerca | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/it/messages.po |
 || Cerca | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/it/messages.po |
 || Ricerca | invenio-search-ui | invenio_search_ui/translations/it/LC_MESSAGES/messages.po |
 || Ricerca | invenio-theme | invenio_theme/translations/it/LC_MESSAGES/messages.po |
 | Delete| Cancella | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/it/messages.po |
 || Cancella | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/it/messages.po |
+|| Cancella | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/it/messages.po |
 || Cancella | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/it/messages.po |
 || Elimina | invenio-oauth2server | invenio_oauth2server/translations/it/LC_MESSAGES/messages.po |
 | Save| Memorizza | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/it/messages.po |
 || Memorizza | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/it/messages.po |
+|| Memorizza | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/it/messages.po |
 || Memorizza | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/it/messages.po |
 || Salva | invenio-oauth2server | invenio_oauth2server/translations/it/LC_MESSAGES/messages.po |

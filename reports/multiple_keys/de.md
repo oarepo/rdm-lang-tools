@@ -2,7 +2,7 @@
 
 Language: de
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -44,10 +44,15 @@ Generated at: 2024-08-10
 || Search | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/de/messages.po |
 || Search | invenio-communities | invenio_communities/translations/de/LC_MESSAGES/messages.po |
 || Search | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/de/messages.po |
+|| Search | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/de/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/translations/de/LC_MESSAGES/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/de/messages.po |
 || Search | invenio-theme | invenio_theme/translations/de/LC_MESSAGES/messages.po |
 || Search  | invenio-app-rdm | invenio_app_rdm/translations/de/LC_MESSAGES/messages.po |
+| Daten| Data | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/de/messages.po |
+|| Dates | invenio-app-rdm | invenio_app_rdm/translations/de/LC_MESSAGES/messages.po |
+|| Dates | invenio-rdm-records | invenio_rdm_records/translations/de/LC_MESSAGES/messages.po |
+|| Dates | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/de/messages.po |
 | Rechte| Privileges | invenio-communities | invenio_communities/translations/de/LC_MESSAGES/messages.po |
 || Rights | invenio-app-rdm | invenio_app_rdm/translations/de/LC_MESSAGES/messages.po |
 | Profil| Profile | invenio-communities | invenio_communities/translations/de/LC_MESSAGES/messages.po |
@@ -60,6 +65,7 @@ Generated at: 2024-08-10
 || Version | invenio-drafts-resources | invenio_drafts_resources/translations/de/LC_MESSAGES/messages.po |
 || Version | invenio-files-rest | invenio_files_rest/translations/de/LC_MESSAGES/messages.po |
 || Version | invenio-rdm-records | invenio_rdm_records/translations/de/LC_MESSAGES/messages.po |
+|| Version | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/de/messages.po |
 || version | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/de/messages.po |
 | Suche in meinen Communitys| Search in my communities | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/de/messages.po |
 || Search in my communities... | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/de/messages.po |
@@ -67,6 +73,7 @@ Generated at: 2024-08-10
 || Delete | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/de/messages.po |
 || Delete | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/de/messages.po |
 || Delete | invenio-oauth2server | invenio_oauth2server/translations/de/LC_MESSAGES/messages.po |
+|| Delete | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/de/messages.po |
 || Delete | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/de/messages.po |
 | Einstellungen|  settings | invenio-communities | invenio_communities/translations/de/LC_MESSAGES/messages.po |
 || Preferences | invenio-userprofiles | invenio_userprofiles/translations/de/LC_MESSAGES/messages.po |
@@ -91,3 +98,5 @@ Generated at: 2024-08-10
 || Members | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/de/messages.po |
 | Speicherklasse| Storage Class | invenio-files-rest | invenio_files_rest/translations/de/LC_MESSAGES/messages.po |
 || Storage class | invenio-files-rest | invenio_files_rest/translations/de/LC_MESSAGES/messages.po |
+| Reiner-Metadateneintrag| Metadata-only | invenio-rdm-records | invenio_rdm_records/translations/de/LC_MESSAGES/messages.po |
+|| Metadata-only record | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/de/messages.po |

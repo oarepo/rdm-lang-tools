@@ -2,7 +2,7 @@
 
 Language: ar
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -21,10 +21,12 @@ Generated at: 2024-08-10
 || Or | invenio-oauthclient | invenio_oauthclient/translations/ar/LC_MESSAGES/messages.po |
 || or | invenio-accounts | invenio_accounts/translations/ar/LC_MESSAGES/messages.po |
 || or | invenio-oauth2server | invenio_oauth2server/translations/ar/LC_MESSAGES/messages.po |
+|| or | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ar/messages.po |
 | إلغاء| Cancel | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ar/messages.po |
 || Cancel | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ar/messages.po |
 || Cancel | invenio-oauth2server | invenio_oauth2server/translations/ar/LC_MESSAGES/messages.po |
 || Cancel | invenio-previewer | invenio_previewer/translations/ar/LC_MESSAGES/messages.po |
+|| Cancel | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ar/messages.po |
 || Cancel | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/ar/messages.po |
 || Cancel | invenio-userprofiles | invenio_userprofiles/translations/ar/LC_MESSAGES/messages.po |
 || Cancel | invenio-users-resources | invenio_users_resources/translations/ar/LC_MESSAGES/messages.po |
@@ -45,16 +47,21 @@ Generated at: 2024-08-10
 | تعديل| Customize | invenio-app-rdm | invenio_app_rdm/translations/ar/LC_MESSAGES/messages.po |
 || Edit | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ar/messages.po |
 || Edit | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ar/messages.po |
+|| Edit | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ar/messages.po |
 || Edit | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/ar/messages.po |
 | حذف| Delete | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ar/messages.po |
 || Delete | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ar/messages.po |
 || Delete | invenio-oauth2server | invenio_oauth2server/translations/ar/LC_MESSAGES/messages.po |
+|| Delete | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ar/messages.po |
 || Delete | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/ar/messages.po |
 || Remove | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ar/messages.po |
 || Remove | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ar/messages.po |
+|| Remove | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ar/messages.po |
+|| delete | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ar/messages.po |
 | حفظ| Save | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ar/messages.po |
 || Save | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ar/messages.po |
 || Save | invenio-oauth2server | invenio_oauth2server/translations/ar/LC_MESSAGES/messages.po |
+|| Save | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ar/messages.po |
 || Save | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/ar/messages.po |
 || Saved | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ar/messages.po |
 | إضافة| Add | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ar/messages.po |

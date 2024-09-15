@@ -2,7 +2,7 @@
 
 Language: tr
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -18,6 +18,7 @@ Generated at: 2024-08-10
 || Sign up | invenio-theme | invenio_theme/translations/tr/LC_MESSAGES/messages.po |
 | Kaldır| Remove | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/tr/messages.po |
 || Remove | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/tr/messages.po |
+|| Remove | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/tr/messages.po |
 || Revoke | invenio-accounts | invenio_accounts/translations/tr/LC_MESSAGES/messages.po |
 || Revoke | invenio-oauth2server | invenio_oauth2server/translations/tr/LC_MESSAGES/messages.po |
 | Çıkış yap| Log out | invenio-app-rdm | invenio_app_rdm/translations/tr/LC_MESSAGES/messages.po |
@@ -30,6 +31,7 @@ Generated at: 2024-08-10
 || Search | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/tr/messages.po |
 || Search | invenio-communities | invenio_communities/translations/tr/LC_MESSAGES/messages.po |
 || Search | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/tr/messages.po |
+|| Search | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/tr/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/translations/tr/LC_MESSAGES/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/tr/messages.po |
 || Search | invenio-theme | invenio_theme/translations/tr/LC_MESSAGES/messages.po |

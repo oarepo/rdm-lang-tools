@@ -2,7 +2,7 @@
 
 Language: ro
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -32,6 +32,7 @@ Generated at: 2024-08-10
 || Search | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ro/messages.po |
 || Search | invenio-communities | invenio_communities/translations/ro/LC_MESSAGES/messages.po |
 || Search | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ro/messages.po |
+|| Search | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ro/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/translations/ro/LC_MESSAGES/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/ro/messages.po |
 || Search | invenio-theme | invenio_theme/translations/ro/LC_MESSAGES/messages.po |
@@ -39,7 +40,18 @@ Generated at: 2024-08-10
 | Previzualizare| Preview | invenio-app-rdm | invenio_app_rdm/translations/ro/LC_MESSAGES/messages.po |
 || Preview | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ro/messages.po |
 || Preview | invenio-previewer | invenio_previewer/translations/ro/LC_MESSAGES/messages.po |
+|| Preview | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ro/messages.po |
 || Previewing | invenio-previewer | invenio_previewer/translations/ro/LC_MESSAGES/messages.po |
+| Nume| Given names | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ro/messages.po |
+|| Name | invenio-app-rdm | invenio_app_rdm/translations/ro/LC_MESSAGES/messages.po |
+|| Name | invenio-communities | invenio_communities/translations/ro/LC_MESSAGES/messages.po |
+|| Name | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/ro/messages.po |
+|| Name | invenio-oauth2server | invenio_oauth2server/translations/ro/LC_MESSAGES/messages.po |
+|| Name | invenio-previewer | invenio_previewer/translations/ro/LC_MESSAGES/messages.po |
+|| Name | invenio-rdm-records | invenio_rdm_records/translations/ro/LC_MESSAGES/messages.po |
+|| Name | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/ro/messages.po |
+|| Name | invenio-users-resources | invenio_users_resources/translations/ro/LC_MESSAGES/messages.po |
+|| Name | invenio-vocabularies | invenio_vocabularies/translations/ro/LC_MESSAGES/messages.po |
 | Fără titlu| No title | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/ro/messages.po |
 || Untitled | invenio-communities | invenio_communities/translations/ro/LC_MESSAGES/messages.po |
 | Cale URL| URL path | invenio-banners | invenio_banners/translations/ro/LC_MESSAGES/messages.po |

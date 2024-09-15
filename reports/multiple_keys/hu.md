@@ -2,7 +2,7 @@
 
 Language: hu
 
-Generated at: 2024-08-10
+Generated at: 2024-09-15
 
 
 ## Values with multiple keys
@@ -33,6 +33,7 @@ Generated at: 2024-08-10
 || Search | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/hu/messages.po |
 || Search | invenio-communities | invenio_communities/translations/hu/LC_MESSAGES/messages.po |
 || Search | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/hu/messages.po |
+|| Search | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/hu/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/translations/hu/LC_MESSAGES/messages.po |
 || Search | invenio-search-ui | invenio_search_ui/assets/semantic-ui/translations/invenio_search_ui/messages/hu/messages.po |
 || Search | invenio-theme | invenio_theme/translations/hu/LC_MESSAGES/messages.po |
@@ -40,6 +41,7 @@ Generated at: 2024-08-10
 | Előnézet| Preview | invenio-app-rdm | invenio_app_rdm/translations/hu/LC_MESSAGES/messages.po |
 || Preview | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/hu/messages.po |
 || Preview | invenio-previewer | invenio_previewer/translations/hu/LC_MESSAGES/messages.po |
+|| Preview | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/hu/messages.po |
 || Previewing | invenio-previewer | invenio_previewer/translations/hu/LC_MESSAGES/messages.po |
 | Rekord kezelése| Manage record | invenio-app-rdm | invenio_app_rdm/translations/hu/LC_MESSAGES/messages.po |
 || Manage record | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/hu/messages.po |
@@ -52,6 +54,7 @@ Generated at: 2024-08-10
 || Delete | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/hu/messages.po |
 || Delete | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/hu/messages.po |
 || Delete | invenio-oauth2server | invenio_oauth2server/translations/hu/LC_MESSAGES/messages.po |
+|| Delete | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/hu/messages.po |
 || Delete | invenio-requests | invenio_requests/assets/semantic-ui/translations/invenio_requests/messages/hu/messages.po |
 || Remove | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/hu/messages.po |
 | Nincs cím| No title | invenio-app-rdm | invenio_app_rdm/theme/assets/semantic-ui/translations/invenio_app_rdm/messages/hu/messages.po |
@@ -66,5 +69,6 @@ Generated at: 2024-08-10
 || Id | invenio-pages | invenio_pages/translations/hu/LC_MESSAGES/messages.po |
 || Identifier | invenio-communities | invenio_communities/assets/semantic-ui/translations/invenio_communities/messages/hu/messages.po |
 || Identifier | invenio-oaiserver | invenio_oaiserver/translations/hu/LC_MESSAGES/messages.po |
+|| Identifier | invenio-rdm-records | invenio-rdm-records/assets/semantic-ui/translations/invenio-rdm-records/messages/hu/messages.po |
 | Nagyítás| Zoom | invenio-previewer | invenio_previewer/translations/hu/LC_MESSAGES/messages.po |
 || Zoom In | invenio-previewer | invenio_previewer/translations/hu/LC_MESSAGES/messages.po |
