@@ -25,3 +25,27 @@ then pull translations from transifex and check if there are more translations f
 Downloading the packages and translations can take a while, so be patient.
 
 Note: you need to have git and transifex set up on your machine for the command to work.
+
+### Downloading all translations and merging them into a single .po file
+
+```bash
+download-translations <path-to-invenio-rdm> <language> --output-directory=./translations
+```
+
+This command will download invenio packages locally to `.temp` directory,
+then pull translations from transifex and merge them into a single .po file
+ready to be translated.
+
+### Splitting and uploading translations
+
+The translations downloaded and merged in the previous step can be split back into original
+files and uploaded to transifex via:
+
+```bash
+split-and-upload-translations <path-to-invenio-rdm> <po_file> <language>
+```
+
+This command will split the translations into original files (downloaded inside the .temp directory).
+Then, for each file, it will print path to the file and let you upload the file yourself (it seems
+that transifex push does not work for some reason) so you'll need to upload the file manually from
+transifex web interface.
