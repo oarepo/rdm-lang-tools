@@ -1,3 +1,10 @@
+#
+# Copyright (C) 2024 CESNET z.s.p.o.
+#
+# rdm-lang-tools is free software; you can redistribute it and/or
+# modify it under the terms of the MIT License; see LICENSE file for more
+# details.
+#
 import dataclasses
 import datetime
 import shutil
@@ -94,6 +101,7 @@ def generate_multiple_keys_protocol(target_directory, lang, registry):
             )
         )
 
+
 def generate_inconsistent_translations_protocol(target_directory, lang, registry):
     duplicates_report_file = target_directory / f"{lang}.md"
     unclear_values = registry.get_unclear_values()
@@ -137,7 +145,9 @@ def check_duplicates(target_directory, temp_directory, repository, languages):
             )
 
     multiple_keys_protocol_directory = target_directory / "multiple_keys"
-    inconsistent_translations_protocol_directory = target_directory / "inconsistent_translations"
+    inconsistent_translations_protocol_directory = (
+        target_directory / "inconsistent_translations"
+    )
 
     if multiple_keys_protocol_directory.exists():
         shutil.rmtree(multiple_keys_protocol_directory)
@@ -148,8 +158,12 @@ def check_duplicates(target_directory, temp_directory, repository, languages):
     inconsistent_translations_protocol_directory.mkdir(parents=True)
 
     for lang, registry in registry_by_language.items():
-        generate_multiple_keys_protocol(multiple_keys_protocol_directory, lang, registry)
-        generate_inconsistent_translations_protocol(inconsistent_translations_protocol_directory, lang, registry)
+        generate_multiple_keys_protocol(
+            multiple_keys_protocol_directory, lang, registry
+        )
+        generate_inconsistent_translations_protocol(
+            inconsistent_translations_protocol_directory, lang, registry
+        )
 
 
 @click.command()

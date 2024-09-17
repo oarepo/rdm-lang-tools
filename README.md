@@ -49,3 +49,17 @@ This command will split the translations into original files (downloaded inside 
 Then, for each file, it will print path to the file and let you upload the file yourself (it seems
 that transifex push does not work for some reason) so you'll need to upload the file manually from
 transifex web interface.
+
+### Checking translations with chatgpt
+
+The following command will download the translations from transifex and output chatgpt prompts.
+
+```bash
+check-via-chatgpt <path-to-invenio-rdm> <language> <language_as_english_text> <output_file.html>
+
+# For example:
+check-via-chatgpt ../rdm13 cs czech gpt_script.html
+```
+
+Open the generated html in browser and follow the instructions.
+

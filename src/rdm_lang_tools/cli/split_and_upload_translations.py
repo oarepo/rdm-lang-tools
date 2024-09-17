@@ -1,13 +1,16 @@
+#
+# Copyright (C) 2024 CESNET z.s.p.o.
+#
+# rdm-lang-tools is free software; you can redistribute it and/or
+# modify it under the terms of the MIT License; see LICENSE file for more
+# details.
+#
 import shutil
 import sys
-from collections import defaultdict
 from pathlib import Path
-from pprint import pprint
-from subprocess import CalledProcessError, check_call
-
-import polib
 
 import click
+import polib
 
 from rdm_lang_tools.cli.check_duplicates import get_translation_files
 from rdm_lang_tools.repository import get_repository
@@ -15,7 +18,9 @@ from rdm_lang_tools.repository import get_repository
 
 @click.command()
 @click.argument("repository", type=click.Path(exists=True, file_okay=False))
-@click.argument("input_po_file", type=click.Path(exists=True, file_okay=True, dir_okay=False))
+@click.argument(
+    "input_po_file", type=click.Path(exists=True, file_okay=True, dir_okay=False)
+)
 @click.argument("language")
 @click.option(
     "--temp-directory",
@@ -32,9 +37,7 @@ def main(*, repository, input_po_file, language, temp_directory):
     repository = get_repository(repository, temp_directory)
 
     global_translations = polib.pofile(Path(input_po_file).read_text())
-    global_translations_by_msgid = {
-        x.msgid: x.msgstr for x in global_translations
-    }
+    global_translations_by_msgid = {x.msgid: x.msgstr for x in global_translations}
 
     translations = repository.local_invenio_packages_with_translations()
 
@@ -53,7 +56,9 @@ def main(*, repository, input_po_file, language, temp_directory):
                 continue
             global_translation = global_translations_by_msgid[entry.msgid]
             if global_translation != entry.msgstr:
-                print(f"Translation mismatch for {entry.msgid} in {pkg}:{translation_path}")
+                print(
+                    f"Translation mismatch for {entry.msgid} in {pkg}:{translation_path}"
+                )
                 print(f"Global translation: >{global_translation}<")
                 print(f"Local translation: >{entry.msgstr}<")
                 entry.msgstr = global_translation

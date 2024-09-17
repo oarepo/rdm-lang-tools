@@ -1,9 +1,15 @@
+#
+# Copyright (C) 2024 CESNET z.s.p.o.
+#
+# rdm-lang-tools is free software; you can redistribute it and/or
+# modify it under the terms of the MIT License; see LICENSE file for more
+# details.
+#
 from collections import defaultdict
 from pathlib import Path
-from pprint import pprint
-import polib
 
 import click
+import polib
 
 from rdm_lang_tools.cli.check_duplicates import get_translation_files
 from rdm_lang_tools.repository import get_repository
@@ -73,12 +79,14 @@ def main(*, repository, language, output_directory, temp_directory):
             comments.extend(item.comment)
 
         for msgstr, items in translations.items():
-            translation_comments.append(f"Translations: {msgstr} in {', '.join(path for _, path in items)}")
+            translation_comments.append(
+                f"Translations: {msgstr} in {', '.join(path for _, path in items)}"
+            )
 
         item = items[0][0]
         item.occurrences = occurrences
-        item.tcomment = '; '.join(translation_comments)
-        item.comment = '; '.join(comments)
+        item.tcomment = "; ".join(translation_comments)
+        item.comment = "; ".join(comments)
 
         if len(translations) > 1:
             item.fuzzy = True
