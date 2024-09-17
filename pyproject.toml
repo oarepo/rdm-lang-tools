@@ -29,6 +29,7 @@ check-duplicates = "rdm_lang_tools.cli.check_duplicates:main"
 download-translations = "rdm_lang_tools.cli.download_translations"
 split-and-upload-translations = "rdm_lang_tools.cli.split_and_upload_translations"
 check-via-chatgpt = "rdm_lang_tools.cli.check_via_chatgpt:main"
+patch-repository = "rdm_lang_tools.cli.patch_repository:main"
 
 [project.urls]
 Homepage = "https://github.com/oarepo/rdm-lang-tools"

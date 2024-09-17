@@ -8,13 +8,13 @@ If you just want to see the results of the latest run, head to the [reports](rep
 To install locally
 
 ```bash
-uv venv
-uv pip install -e .
+uv venv               # or python3.12 -m venv .venv
+uv pip install -e .   # or .venv/bin/pip install -e .
 ```
 
 ## Usage
 
-### Checking if there are more translations for a single key
+### Checking if there are more than one translations for a single key
 
 ```bash
 check-duplicates <path-to-invenio-rdm>
@@ -36,9 +36,12 @@ This command will download invenio packages locally to `.temp` directory,
 then pull translations from transifex and merge them into a single .po file
 ready to be translated.
 
+Translate the po file in a tool like poedit or directly inside pycharm/code with github copilot
+plugin to help you.
+
 ### Splitting and uploading translations
 
-The translations downloaded and merged in the previous step can be split back into original
+Translations from the previous step can be split back into original
 files and uploaded to transifex via:
 
 ```bash
@@ -47,8 +50,8 @@ split-and-upload-translations <path-to-invenio-rdm> <po_file> <language>
 
 This command will split the translations into original files (downloaded inside the .temp directory).
 Then, for each file, it will print path to the file and let you upload the file yourself (it seems
-that transifex push does not work for some reason) so you'll need to upload the file manually from
-transifex web interface.
+that transifex push does not work for me for some reason, commented out in sources if you want to try it) 
+so you'll need to upload the file manually from transifex web interface.
 
 ### Checking translations with chatgpt
 
@@ -62,4 +65,14 @@ check-via-chatgpt ../rdm13 cs czech gpt_script.html
 ```
 
 Open the generated html in browser and follow the instructions.
+
+### Checking translations in a running repository
+
+To download the newest translations and apply them to an installed RDM repository, call
+
+```bash
+patch-repository <path-to-invenio-rdm> <language>
+```
+
+Then build the repository UI and check if the translations are correct.
 

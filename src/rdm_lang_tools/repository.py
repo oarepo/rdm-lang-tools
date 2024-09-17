@@ -143,6 +143,7 @@ class Repository(abc.ABC):
                 "--branch",
                 f"v{package_version}",
                 "--single-branch",
+                "--depth=1",
                 local_path,
             ]
         )
@@ -157,10 +158,6 @@ class Repository(abc.ABC):
                     break
         return ret
 
-    @abc.abstractmethod
-    def install_editable(self, path):
-        pass
-
 
 class RepositoryWithPipfile(Repository):
 
@@ -174,12 +171,20 @@ class RepositoryWithPipfile(Repository):
             )
         )
 
-    def install_editable(self, path):
-        check_call(
-            ["pipenv", "run", "pip", "install", "--force", "--no-deps", "-e", path],
+    def get_site_packages_dir(self):
+        data = check_output(
+            [
+                "pipenv",
+                "run",
+                "python",
+                "-c",
+                "import site; print(site.getsitepackages())",
+            ],
             cwd=self.path,
             env={**os.environ, "PIPENV_IGNORE_VIRTUALENVS": "1"},
         )
+        data = data.replace("'", '"').strip()
+        return json.loads(data)[0]
 
 
 class RepositoryWithVenv(Repository):
@@ -190,8 +195,17 @@ class RepositoryWithVenv(Repository):
             check_output([".venv/bin/pip", "list", "--format=json"], cwd=self.path)
         )
 
-    def install_editable(self, path):
-        check_call([".venv/bin/pip", "install", "--force", "--no-deps", "-e", path])
+    def get_site_packages_dir(self):
+        return json.loads(
+            check_output(
+                [
+                    ".venv/bin/python",
+                    "-c",
+                    "import site; print(site.getsitepackages())",
+                ],
+                cwd=self.path,
+            )
+        )[0]
 
 
 def get_repository(repository_directory, temp_directory):
