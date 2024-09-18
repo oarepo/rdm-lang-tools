@@ -12,7 +12,7 @@ Then they:
       tag `v<package-version>`
       * implementation in [`Repository.download_invenio_packages()`](./src/rdm_lang_tools/repository.py#L39)
    2. run `tx pull -a` to download translations from transifex. This creates
-      `.po` files for each resource in the transifex (that is, both the python
+      `.po` files for each resource from transifex (that is, both the python
       and the javascript translations are downloaded as `.po` files)
       * implementation in [`Repository.download_translations()`](./src/rdm_lang_tools/repository.py#L61)
    3. parse `.tx/config` and get the paths where the `.po` files have been downloaded
