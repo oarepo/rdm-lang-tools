@@ -10,13 +10,13 @@ Then they:
 3. for each package:
    1. clone its github repository to a temporary directory (`.temp` by default) and checkout 
       tag `v<package-version>`
-      * implementation in [Repository.download_invenio_packages](./src/rdm_lang_tools/repository.py#L39)
+      * implementation in [`Repository.download_invenio_packages()`](./src/rdm_lang_tools/repository.py#L39)
    2. run `tx pull -a` to download translations from transifex. This creates
       `.po` files for each resource in the transifex (that is, both the python
       and the javascript translations are downloaded as `.po` files)
-      * implementation in [Repository.download_translations](./src/rdm_lang_tools/repository.py#L61)
+      * implementation in [`Repository.download_translations()`](./src/rdm_lang_tools/repository.py#L61)
    3. parse `.tx/config` and get the paths where the `.po` files have been downloaded
-      * implementation in [Repository.local_invenio_packages_with_translations](./src/rdm_lang_tools/repository.py#L123)
+      * implementation in [`Repository.local_invenio_packages_with_translations()`](./src/rdm_lang_tools/repository.py#L123)
 
 ## Merging the translations
 
