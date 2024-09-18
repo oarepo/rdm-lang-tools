@@ -23,9 +23,9 @@ Then they:
 The `download-translations` command merges the translations into a single `.po` file.
 It takes the paths to the downloaded translations and:
 
-1. reads all `.po` files, and filling dict of msgid -> List[POEntry]
-2. for each msgid, it:
-   1. if there is only one translation, it adds it to the output file
+1. reads all `.po` files and creates a dict of `msgid -> List[(transifex_resource_name, POEntry)]`
+2. for each msgid from the dict:
+   1. if there is only one translation, it adds it to the merged file directly
    2. if there are multiple different translations for a single msgid, 
       it adds the first one, marking it as fuzzy and adding a translator 
       comment with the list of all the different translations and in which
@@ -43,9 +43,10 @@ For each of the downloaded transifex resources (as `.po` files) inside the temp 
 the `patch-repository` command does:
 
 1. reads the `.po` file
-2. saves it as `.mo` file for babel
+2. compiles it to `.mo` file for babel
 3. if there is a `translations.json` file present in the same directory, 
-   it overwrites the translations inside the file.
+   it overwrites the translations inside the file, adding new keys and updating
+   the existing ones
 4. For the `po`, `mo` and `json` files, it locates the file inside the
    RDM repository venv and overwrites the original file with the new version.
 
