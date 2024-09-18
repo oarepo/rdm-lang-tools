@@ -37,6 +37,9 @@ def main(
     """
     Download translations and patch the repository with the downloaded translations.
     """
+    if not temp_directory.exists():
+        skip_download = False
+
     repository = get_repository(repository, temp_directory)
 
     if not skip_download:
@@ -62,10 +65,8 @@ def main(
             translations = json.loads(json_file.read_text())
             # read the po file
             po = polib.pofile(po_file.read_text())
-            # check if the json file is consistent with the po file
             for entry in po:
-                if entry.msgid in translations:
-                    translations[entry.msgid] = entry.msgstr
+                translations[entry.msgid] = entry.msgstr
             # write the json file back
             json_file.write_text(json.dumps(translations, indent=2, ensure_ascii=False))
             file_to_copy = json_file
