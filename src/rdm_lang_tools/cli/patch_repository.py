@@ -27,34 +27,51 @@ from rdm_lang_tools.repository import get_repository
 @click.argument("repository", type=click.Path(exists=True, file_okay=False))
 @click.argument("language")
 @click.option("--skip-download", default=False, is_flag=True)
+@click.option("--skip-download-repository", default=False, is_flag=True)
+@click.option("--skip-download-translations", default=False, is_flag=True)
 def main(
     *,
     repository,
     language,
     temp_directory,
     skip_download,
+    skip_download_repository,
+    skip_download_translations
 ):
     """
     Download translations and patch the repository with the downloaded translations.
     """
     if not temp_directory.exists():
-        skip_download = False
+        skip_download_repository = False
+        skip_download_translations = False
 
     repository = get_repository(repository, temp_directory)
 
-    if not skip_download:
+    if skip_download:
+        skip_download_repository = True
+        skip_download_translations = True
+
+    if not skip_download_repository:
         repository.download_invenio_packages()
+
+    if not skip_download_translations:
         repository.download_translations()
 
     translations = repository.local_invenio_packages_with_translations()
 
+    fix_rdm_package(translations, language)
+
     for pkg, local_path, translation_path in translations:
+        translation_path = translation_path.replace('invenio-rdm-records', 'invenio_rdm_records')
         translation_files = get_translation_files(local_path, translation_path)
         if language not in translation_files:
             print(f"Language not in package {pkg} at {local_path}, skipping")
             continue
-
         po_file = translation_files[language]
+        if "invenio-rdm-records" in str(po_file):
+            po_file = local_path / (
+                str(po_file.relative_to(local_path)).replace("invenio-rdm-records", "invenio_rdm_records")
+            )
 
         # check if there is a json file and if yes, fix it
         json_file = po_file.parent / "translations.json"
@@ -88,6 +105,19 @@ def main(
 
     # copy those to the repository
 
+def fix_rdm_package(translations, language):
+    for pkg, local_path, translation_path in translations:
+        if pkg != 'invenio-rdm-records':
+            continue
+        if not translation_path.startswith('invenio-rdm-records/'):
+            continue
+        # copy the content of the translation path to invenio_rdm_records
+        translation_path = translation_path.replace('<lang>', language)
+
+        shutil.copy(
+            Path(local_path) / translation_path,
+            Path(local_path) / translation_path.replace('invenio-rdm-records', 'invenio_rdm_records')
+        )
 
 if __name__ == "__main__":
     main()
