@@ -1,0 +1,121 @@
+invenio-banners:
+  translations: true
+  pull-requests:
+    - https://github.com/inveniosoftware/invenio-banners/pull/37
+
+invenio-records-resources:
+  translations: true
+  pull-requests:
+    -  https://github.com/inveniosoftware/invenio-records-resources/pull/598/files
+
+invenio-communities:
+  translations: true
+  pull-requests:
+    - https://github.com/inveniosoftware/invenio-communities/pull/1241
+
+invenio-rdm-records:
+  translations: true
+  pull-requests:
+    - https://github.com/inveniosoftware/invenio-rdm-records/pull/1855/files
+
+invenio-drafts-resources:
+  translations: true
+  pull-requests:
+    - https://github.com/inveniosoftware/invenio-drafts-resources/pull/289/files
+
+invenio-records:
+  translations: true
+  pull-requests:
+    - https://github.com/inveniosoftware/invenio-records/pull/327
+
+invenio-theme:
+  translations: true
+  pull-requests:
+    - https://github.com/inveniosoftware/invenio-theme/pull/400
+
+invenio-accounts:
+  translations: true
+  pull-requests:
+    - https://github.com/inveniosoftware/invenio-accounts/pull/494
+
+# rest of packages without active pull requests
+invenio-access:
+  translations: true
+invenio-admin:
+  translations: true
+invenio-administration:
+  translations: true
+invenio-app:
+  translations: true
+invenio-app-rdm:
+  translations: true
+invenio-assets:
+  translations: true
+invenio-base:
+  translations: true
+invenio-cache:
+  translations: true
+invenio-celery:
+  translations: true
+invenio-config:
+  translations: true
+invenio-db:
+  translations: true
+invenio-files-rest:
+  translations: true
+invenio-formatter:
+  translations: true
+invenio-github:
+  translations: true
+invenio-i18n:
+  translations: true
+invenio-indexer:
+  translations: true
+invenio-jsonschemas:
+  translations: true
+invenio-logging:
+  translations: true
+invenio-mail:
+  translations: true
+invenio-notifications:
+  translations: true
+invenio-oaiserver:
+  translations: true
+invenio-oauth2server:
+  translations: true
+invenio-oauthclient:
+  translations: true
+invenio-pages:
+  translations: true
+invenio-pidstore:
+  translations: true
+invenio-previewer:
+  translations: true
+invenio-queues:
+  translations: true
+invenio-records-files:
+  translations: true
+invenio-records-permissions:
+  translations: true
+invenio-records-rest:
+  translations: true
+invenio-records-ui:
+  translations: true
+invenio-requests:
+  translations: true
+invenio-rest:
+  translations: true
+invenio-search:
+  translations: true
+invenio-search-ui:
+  translations: true
+invenio-stats:
+  translations: true
+invenio-userprofiles:
+  translations: true
+invenio-users-resources:
+  translations: true
+invenio-vocabularies:
+  translations: true
+invenio-webhooks:
+  translations: true

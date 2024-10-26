@@ -21,7 +21,11 @@ dependencies=[
     "transifex-python>=3.5.0",
     "progressbar2>=4.4.2",
     "polib>=1.2.0",
-    "jinja2"
+    "jinja2",
+    "pyyaml",
+    "setuptools",
+    "pip",
+    "wheel"
 ]
 
 [project.scripts]

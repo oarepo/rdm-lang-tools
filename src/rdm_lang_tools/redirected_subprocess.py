@@ -21,7 +21,7 @@ def dump_stream(in_stream, out_stream):
         out_stream.flush()
 
 
-def check_call(*args, **kwargs):
+def check_call(*args, output=None, **kwargs):
     print()
     process = subprocess.Popen(
         *args,
@@ -32,11 +32,11 @@ def check_call(*args, **kwargs):
     )
 
     ot = threading.Thread(
-        target=dump_stream, args=(process.stdout, sys.stdout), daemon=True
+        target=dump_stream, args=(process.stdout, output or sys.stdout), daemon=True
     )
     ot.start()
     et = threading.Thread(
-        target=dump_stream, args=(process.stderr, sys.stderr), daemon=True
+        target=dump_stream, args=(process.stderr, output or sys.stderr), daemon=True
     )
     et.start()
     process.wait()

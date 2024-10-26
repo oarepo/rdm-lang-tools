@@ -36,6 +36,10 @@ class Repository(abc.ABC):
     def installed_packages(self):
         pass
 
+    @abc.abstractmethod
+    def install_package(self, package_path, output=None):
+        pass
+
     def download_invenio_packages(self):
         bar = progressbar.ProgressBar(
             prefix="Downloading {variables.package_name} ",
@@ -133,7 +137,7 @@ class Repository(abc.ABC):
                     ret.append((pkg_name, local_path, config[resource]["file_filter"]))
         return ret
 
-    def download_package(self, package_url, package_version, local_path):
+    def download_package(self, package_url, package_version, local_path, log_stream=None):
         check_call(
             [
                 "git",
@@ -145,7 +149,8 @@ class Repository(abc.ABC):
                 "--single-branch",
                 "--depth=1",
                 local_path,
-            ]
+            ],
+            output=log_stream,
         )
 
     @cached_property
@@ -171,6 +176,14 @@ class RepositoryWithPipfile(Repository):
             )
         )
 
+    def install_package(self, package_path, output=None):
+        check_call(
+            ["pipenv", "run", "pip", "install", package_path],
+            cwd=self.path,
+            output=output,
+            env={**os.environ, "PIPENV_IGNORE_VIRTUALENVS": "1"},
+        )
+
     def get_site_packages_dir(self):
         data = check_output(
             [
@@ -192,7 +205,17 @@ class RepositoryWithVenv(Repository):
     @cached_property
     def installed_packages(self):
         return json.loads(
-            check_output([".venv/bin/pip", "list", "--format=json"], cwd=self.path)
+            check_output([".venv/bin/pip", "list", "--format=json"],
+                         cwd=self.path,
+                         env={**os.environ, "PIPENV_IGNORE_VIRTUALENVS": "1"})
+        )
+
+    def install_package(self, package_path, output=None):
+        check_call(
+            [".venv/bin/pip", "install", package_path],
+            cwd=self.path,
+            output=output,
+            env={**os.environ, "PIPENV_IGNORE_VIRTUALENVS": "1"}
         )
 
     def get_site_packages_dir(self):
